@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CodewordLookup from './components/CodewordLookup';
+import ActionIdLookup from './components/ActionIdLookup';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto p-8">
+      <h1 className="text-3xl font-bold mb-8">Media Cell API Client</h1>
+      <CodewordLookup />
+      <hr className="my-8" />
+      <ActionIdLookup />
     </div>
   );
-}
+};
 
 export default App;
